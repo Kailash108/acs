@@ -206,7 +206,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12px;
+    font-size: 15px;
   }
   
   /* .f-item-3 {
@@ -252,7 +252,7 @@ a {
     }
   
     .col-5 p{
-        font-size: 15px;
+        font-size: 13px;
         color: #475569;
         width: 75%;
     }
