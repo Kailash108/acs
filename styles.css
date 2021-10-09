@@ -137,6 +137,7 @@ a {
     flex-wrap: wrap;
     font-size: 30px;
     text-align: center;
+    padding: 2cm;
   }
   
   .flex-item-1 {
@@ -145,6 +146,7 @@ a {
     font-size: 15px;
     text-align: left;
     line-height: 0.8cm;
+    box-shadow: 5px 10px 20px #475569;
   }
   
   .flex-item-2 {
@@ -153,6 +155,7 @@ a {
     font-size: 15px;
     text-align: left;
     line-height: 0.8cm;
+    box-shadow: 5px 10px 20px #475569;
   }
   
   .flex-item-3 {
@@ -161,6 +164,7 @@ a {
     font-size: 15px;
     text-align: left;
     line-height: 0.8cm;
+    box-shadow: 5px 10px 20px #475569;
   }
 
   .flex-container > div{
@@ -169,12 +173,14 @@ a {
   }
 
   .flex-container > div:hover{
-    background-color: #f2f2f2;
+    background-color: lightslategrey;
     transition-duration: 0.8s;
+    color: white;
   }
 
   .footer{
       width: 100%;
+      height: 30vh
   }
 
   .f-container {
@@ -200,7 +206,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 15px;
+    font-size: 12px;
   }
   
   /* .f-item-3 {
@@ -211,7 +217,57 @@ a {
     font-size: 15px;
   } */
 
-  @media (max-width: 560px) {
+  .row {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 1cm;
+  }
+  
+  .row::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  .copyright_footer{
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+  }
+  
+  .col-6 { width: 50%; }
+  .col-5 { width: 50%; }
+ 
+    .wordstyle{
+        color:blue;
+        text-shadow: 1px 1px 1px black;
+        font-family:cursive;
+        font-size: 30px;
+    }
+
+    .row > .col-5{
+        padding: 20px;
+    }
+  
+    .col-5 p{
+        font-size: 15px;
+        color: #475569;
+        width: 75%;
+    }
+
+    @media(max-width: 700px){
+        .col-6 img{
+          width: 100%;
+        }
+        .col-6, .col-5{
+            width: 100%;
+        }
+    }
+
+  @media (max-width: 550px) {
+    
     .text {font-size: 11px}
 
     .flex-item-1, .flex-item-2, .flex-item-3 {
@@ -231,6 +287,7 @@ a {
         text-align: center;
         transition: 0.3s;
         box-shadow: 1px 0 5px 0 grey;
+        text-decoration: none;
     }
 
     .nav-menu.active {
