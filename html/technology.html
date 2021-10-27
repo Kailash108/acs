@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/techStyles.css">
+        <title>Aditude Creative Solutions</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <a href="#" class="nav-logo">
+                    <h2>Aditude</h2>
+                    <p>Creative Solutions</p>
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div onclick="mobileMenu()" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+
+    
+
+        <div class="f-container">
+            <img class="footer" src="https://stentortechnologies.com/images/footer-bg.jpg">
+            <!-- <div class="f-item-1">
+                <h3>Commitment</h3>
+                <p style="color: white">We fulfill our</p>
+            </div> -->
+            <div class="f-item-2">
+                <h2>Aditude Creative Solutions</h2>
+                <p>Patamta, Vijayawada</p>
+                <p>Andhra Pradesh</p>
+                <p>India</p>
+                <br><br>
+                <p>aditudecreativesolutions@gmail.com</p>
+                <p>+91 1234567890</p>
+            </div>
+            <!-- <div class="f-item-3">
+                <h3>Professionalism</h3>
+                <p style="color: white;">We value </p>
+            </div> -->
+        </div>
+
+        <div class="copyright_footer">
+            <p>Copyrights © 2021 Aditude Creative Solutions, All rights reserved.</p>
+        </div>
+
+        <script>
+            const navMenu = document.querySelector(".nav-menu");
+            function mobileMenu() {
+                navMenu.classList.toggle('active')
+                document.getElementsByClassName('nav-logo').innerHTML = "black"
+            }
+        </script>
+    </body>
+</html>
